@@ -2,8 +2,10 @@
 
 Minimal code example for that CTF task that drove you insane
 
-Step 1: use Google lens or tineye to find the original unmodified image
-Step 2: Use this code
+![alt text](iHCQX6p.png)
+
+1. Use Google lens or tineye to find the original unmodified image
+2: Use this code
 
 ```
 sloth = np.asarray(sloth)[:,:,:3].astype(int)
@@ -24,3 +26,4 @@ ax.imshow(10*out)
 #abs(fft).min()
 ```
 
+![alt text](spectral.png)
