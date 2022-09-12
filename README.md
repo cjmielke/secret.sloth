@@ -8,22 +8,24 @@ Minimal code example for that CTF task that drove you insane
 2: Use this code
 
 ```
+orig=Im.open('secret-sloth.png')
 sloth = np.asarray(sloth)[:,:,:3].astype(int)
-slothfft=np.fft.fft2(sloth)
 
 orig=Im.open('iHCQX6p.png')         # original sloth image found on reddit
 orig = np.asarray(orig).astype(int)
 
+# compute FFT for the original sloth image, and the one with the secret message
 origfft=np.fft.fft2(orig)
-fig, ax = plt.subplots(figsize=(18, 30))
+slothfft=np.fft.fft2(sloth)
+
 out = abs(np.fft.fft2(slothfft-origfft))
 out = abs(slothfft-origfft)
-print(out.min(), out.max())
-#ax.imshow(out/out.max())
+
+# normalize
 out=(out+out.min())
 out/=out.max()
+
 ax.imshow(10*out)
-#abs(fft).min()
 ```
 
 ![alt text](spectral.png)
