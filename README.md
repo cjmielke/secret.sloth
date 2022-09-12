@@ -4,7 +4,7 @@ Minimal code example for that CTF task that drove you insane
 
 ![alt text](iHCQX6p.png)
 
-1. Use Google lens or tineye to find the original unmodified image
+1. Use Google lens or tineye to find the [original unmodified image](https://www.reddit.com/r/Slothswithhats/comments/1cpj4v/he_killed_a_man_for_that_hat/)
 2: Use this code
 
 ```
