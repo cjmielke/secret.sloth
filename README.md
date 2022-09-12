@@ -18,6 +18,8 @@ orig = np.asarray(orig).astype(int)
 origfft=np.fft.fft2(orig)
 slothfft=np.fft.fft2(sloth)
 
+# Now the magic! We subtract the spectra of the original sloth from the secret sloth, 
+# leaving behind just the spectral components that contain the message
 out = abs(np.fft.fft2(slothfft-origfft))
 out = abs(slothfft-origfft)
 
